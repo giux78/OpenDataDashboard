@@ -12,6 +12,11 @@
 /conf/*
 !/conf/README.txt
 
+logs/
+project/
+
+
+
 ##### INTELLIJ
 .idea/workspace.xml
 .idea/tasks.xml
