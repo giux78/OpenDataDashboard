@@ -17,4 +17,8 @@ object Application extends Controller {
     Ok(views.html.home2("OpenData Dashboard"))
   }
 
+    def chart(chartName :String) = Action {
+    Ok(views.html.dashboard_chart(chartName))
+  }
+  
 }

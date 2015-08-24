@@ -15,7 +15,7 @@ object ChartController extends Controller {
     val db = mongoClient("meta_ckan")
     val coll = db("dashboard_chart")
     val query = MongoDBObject.empty
-    val fields = MongoDBObject("dataset_title" -> 1, "dataset_name" -> 1)
+    val fields = MongoDBObject("dataset_title" -> 1, "dataset_name" -> 1, "_id" -> 0)
     var results = new ListBuffer[JsValue]()
     for (x <- coll.find(query, fields)) {
       results += Json.parse(x.toString())
