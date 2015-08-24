@@ -8,9 +8,13 @@ object Application extends Controller {
   def index = Action {
     Ok(views.html.index("Your new application is ready."))
   }
-  
-    def home = Action {
+
+  def home = Action {
     Ok(views.html.home("OpenData Dashboard"))
+  }
+
+  def home2 = Action {
+    Ok(views.html.home2("OpenData Dashboard"))
   }
 
 }
