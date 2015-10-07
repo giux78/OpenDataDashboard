@@ -4,13 +4,16 @@
 
 # Home page
 GET   /                    controllers.Application.index
-GET   /home                controllers.Application.home
+# GET   /home                controllers.Application.home
 GET   /home2               controllers.Application.home2
 GET   /dashboard_chart/:chart_name               controllers.Application.chart(chart_name)
 
 # Chart Controller
 GET   /chart_titles        controllers.ChartController.chart_titles
 GET   /chart/:chart_name   controllers.ChartController.chartsFromName(chart_name)
+
+# Dashboard creator
+GET   /create_dashboard    controllers.Application.create_dashboard
 
 # Map static resources from the /public folder to the /assets URL path
 GET   /assets/*file        controllers.Assets.at(path="/public", file)

@@ -13,3 +13,6 @@ libraryDependencies ++= Seq(
   ws,
    "org.mongodb" %% "casbah" % "2.8.2"
 )
+
+
+fork in run := true
