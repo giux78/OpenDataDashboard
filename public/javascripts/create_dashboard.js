@@ -22,13 +22,7 @@
 	                	   //chartType: comunita_valle | comuni | bar_chart
 	                	   //se non esiste il div (premuta la x per cancellarlo oppure prima richiesta) disegno il grafico
 	                	   if($('#' + name + '_' + chartType + '_div').length===0) {
-	                	       //setto se è la prima visita, se è già stato disegnato cancello il primo chart
-	                	       first_click=true;
-	                	       if(chart[name+'_'+chartType]!=undefined) {
-	                	           first_click=false;
-	                	           delete chart[name+'_'+chartType]
-	                	       }
-	                	        draw_chart(chartType, name + '_' + chartType + '_div', name+'_'+chartType, title, data, first_click);
+	                	       draw_chart(chartType, name + '_' + chartType + '_div', name+'_'+chartType, title, data);
 	                	   }
 	       	    		}
 	        	   })
@@ -41,13 +35,14 @@
 	}
 	
 	//funzione che  prende tutti i dati e, in base al tipo, li processa
-	function draw_chart(chartType, divID, name, title, data, first) {
+	function draw_chart(chartType, divID, name, title, data) {
 		if(chartType == 'comunita_valle') {
 		    //crea div
-            $('#chart_div').append('<div class="row"><div class="col-md-12"><section class="panel"><header class="panel-heading"><span id="'+name+'_title"></span><span class="tools pull-right"> <a href="javascript:;" class="fa fa-chevron-down"></a><a href="javascript:;" class="fa fa-cog"></a><a href="javascript:delete_chart(`'+name+'_title`);" class="fa fa-times"></a></span></header><div class="panel-body"><div id="'+ divID + '" style="width:100%;height:400px; text-align: center; margin:0 auto;"></div></div></section></div></div>')
+            $('#chart_div').append('<div class="row"><div class="col-md-12"><section class="panel"><header class="panel-heading"><span id="'+name+'_title"></span><span class="tools pull-right"> <a href="javascript:;" class="fa fa-chevron-down"></a><a href="javascript:;" class="fa fa-cog"></a><a href="javascript:delete_chart(`'+name+'`);" class="fa fa-times"></a></span></header><div class="panel-body"><div id="'+ divID + '" style="width:100%;height:400px; text-align: center; margin:0 auto;"></div></div></section></div></div>')
 			$('#'+name+'_title').html(title+" per Comunità di Valle")
 			//raggruppa i valori secondo specifiche di morris.js
-			if(first) groupValue(name, data);
+			//if risparmia il raggruppamento se è una seconda chiamata
+			if(dizionario[name]===undefined) groupValue(name, data);
 			//disegna grafico
             drawPlot(name,divID);
             //crea html e logica della legenda a checkbox
@@ -55,15 +50,15 @@
 		}
 		//come sopra ma grafico di 800px
 		else if(chartType == 'comuni') {
-			$('#chart_div').append('<div class="row"><div class="col-md-12"><section class="panel"><header class="panel-heading"><span id="'+name+'_title"></span><span class="tools pull-right"> <a href="javascript:;" class="fa fa-chevron-down"></a><a href="javascript:;" class="fa fa-cog"></a><a href="javascript:delete_chart(`'+name+'_title`);" class="fa fa-times"></a></span></header><div class="panel-body"><div id="'+ divID + '" style="width:100%;height:800px; text-align: center; margin:0 auto;"></div></div></section></div></div>')
+			$('#chart_div').append('<div class="row"><div class="col-md-12"><section class="panel"><header class="panel-heading"><span id="'+name+'_title"></span><span class="tools pull-right"> <a href="javascript:;" class="fa fa-chevron-down"></a><a href="javascript:;" class="fa fa-cog"></a><a href="javascript:delete_chart(`'+name+'`);" class="fa fa-times"></a></span></header><div class="panel-body"><div id="'+ divID + '" style="width:100%;height:800px; text-align: center; margin:0 auto;"></div></div></section></div></div>')
 			$('#'+name+'_title').html(title+" per Comuni")
-			groupValue(name, data);
+			if(dizionario[name]===undefined) groupValue(name, data);
             drawComuniPlot(name,divID);
             createLegend(name, divID);
 		}
 		//TODO
 		else if(chartType == 'bar_chart') {
-    		$('#chart_div').append('<div class="row"><div class="col-md-12"><section class="panel"><header class="panel-heading"><span id="'+name+'_title"></span><span class="tools pull-right"> <a href="javascript:;" class="fa fa-chevron-down"></a><a href="javascript:;" class="fa fa-cog"></a><a href="javascript:delete_chart(`'+name+'_title`);" class="fa fa-times"></a></span></header><div class="panel-body"><div id="'+ divID + '" style="width:100%;height:400px; text-align: center; margin:0 auto;"></div></div></section></div></div>')
+    		$('#chart_div').append('<div class="row"><div class="col-md-12"><section class="panel"><header class="panel-heading"><span id="'+name+'_title"></span><span class="tools pull-right"> <a href="javascript:;" class="fa fa-chevron-down"></a><a href="javascript:;" class="fa fa-cog"></a><a href="javascript:delete_chart(`'+name+'`);" class="fa fa-times"></a></span></header><div class="panel-body"><div id="'+ divID + '" style="width:100%;height:400px; text-align: center; margin:0 auto;"></div></div></section></div></div>')
 			$('#'+name+'_title').html(title)
 		}
 	}
@@ -201,6 +196,7 @@ function changeData(nome, element) {
         }
     }
     else {
+        var campo = (element.name).split('*')[0];
         var index = findInDictionary(nome, campo);
         checked[nome][index] = element.checked;
     }
@@ -212,7 +208,8 @@ function changeData(nome, element) {
 function delete_chart(element) {
     //ottengo il nome dello span
     // div->div->section->header->SPAN
-        $('#'+element).parent().parent().parent().parent().remove();
+    $('#'+element+'_title').parent().parent().parent().parent().remove();
+	delete chart[element];
 }
 	
 	
