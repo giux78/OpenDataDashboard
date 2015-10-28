@@ -204,14 +204,65 @@ function changeData(nome, element) {
 }
 
 //funzione chiamata quando viene premuta la x blu, cancella quel grafico
-//TODO: cosa fare dei dati
 function delete_chart(element) {
     //ottengo il nome dello span
     // div->div->section->header->SPAN
     $('#'+element+'_title').parent().parent().parent().parent().remove();
 	delete chart[element];
 }
+
+
+function save_dashboard(){
+    var grafici = 3;
+    if(Object.keys(chart).length<grafici) {
+        alert("Non puoi salvare un dashboard con meno di "+grafici+" grafici");
+    }
+    else {
+    	var board = [];
+    	for(var istance in chart) {
+    		var chartdata = {};
+    		var token = istance.split('_');
+    		var name ='';
+    		var typevalue;
+    		for(var i=0; i<token.length-2; i++) {
+    			name+=token[i];
+    		}
+    		if(token[token.length-1]!=='valle') {
+    			name+=token[token.length-2];
+    			typevalue=token[token.length-1];
+    		}
+    		else {
+    			typevalue=token[token.length-2]+'_'+token[token.length-1];
+    		}
+    		chartdata['name']=['name'];
+    		chartdata['name']=name;
+    		chartdata['chartType']=['chartType'];
+    		chartdata['chartType']=typevalue;
+    		chartdata['checked']=['checked'];
+    		chartdata['checked']=checked[istance];
+    		board.push(chartdata);
+    	}
+    	json_board = JSON.stringify(board);
+    	console.log("dashboard saved:");
+    	console.log(json_board);
+    	$.ajax({
+            url: "/post_dashboard",
+            type: "POST",
+            data: json_board,
+            contentType: "application/json",
+            dataType: "json", //per la response
+            success: function () {
+                alert("ok")
+            },
+            error: function(xhr, status, error) {
+              var err = eval("(" + xhr.responseText + ")");
+              alert(err.Message);
+            }
+        });
+        alert("Dashboard salvato con codice: tbd");
+    }
 	
+}
 	
 //quando la pagina è caricata, carico la lista dei dataset disponibili	
 $(document).ready(function() {

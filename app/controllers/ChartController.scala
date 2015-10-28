@@ -36,5 +36,8 @@ object ChartController extends Controller {
     mongoClient.close
     Ok(Json.obj("status" -> "ok", "results" -> results))
   }
-
+  
+  def saveDashboard = Action { 
+      Ok(Json.obj("status" -> "ok"))
+    }
 }
