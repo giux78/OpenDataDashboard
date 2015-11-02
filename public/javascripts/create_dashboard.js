@@ -222,7 +222,7 @@ function save_dashboard(){
     	for(var istance in chart) {
     		var chartdata = {};
     		var token = istance.split('_');
-    		var name = token[1];
+    		var name = token[0];
     		var typevalue;
     		for(var i=1; i<token.length-2; i++) {
     			name+='_'+token[i];
@@ -242,7 +242,9 @@ function save_dashboard(){
     		chartdata['checked']=checked[istance];
     		board.push(chartdata);
     	}
-    	json_board = JSON.stringify(board);
+    	var fromArrayToOneJson = {"data":board}
+    	json_board = JSON.stringify(fromArrayToOneJson);
+    	
     	console.log("dashboard saved:");
     	console.log(json_board);
     	$.ajax({
@@ -250,7 +252,7 @@ function save_dashboard(){
             type: "POST",
             data: json_board,
             contentType: "application/json",
-            //dataType: "json", //per la response
+            dataType: "json", //per la response
             success: function () {
                 alert("ok")
             },

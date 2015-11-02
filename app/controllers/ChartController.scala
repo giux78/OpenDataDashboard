@@ -38,10 +38,18 @@ object ChartController extends Controller {
   }
   
   def saveDashboard = Action { request =>
-      val body: AnyContent = request.body
-      val jsonBody: Option[JsValue] = body.asJson 
-      val json: JsValue = jsonBody.get
-      println(json)
-      Ok(Json.stringify(json))
+    val body: AnyContent = request.body
+    val jsonBody: Option[JsValue] = body.asJson 
+    val json: JsValue = jsonBody.get
+    val string = Json.stringify(json)
+    val document: DBObject = com.mongodb.util.JSON.parse(string).asInstanceOf[DBObject]
+    val mongoClient = MongoClient("localhost", 27017)
+    val db = mongoClient("meta_ckan")
+    val coll = db("dashboard_saved")
+    coll.insert(document)
+    mongoClient.close
+    val id: String = document.get("_id").toString()
+    println(id)
+      Ok(Json.obj("code" -> id))
     }
 }
