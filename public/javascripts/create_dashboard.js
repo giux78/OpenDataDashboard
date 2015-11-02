@@ -213,7 +213,7 @@ function delete_chart(element) {
 
 
 function save_dashboard(){
-    var grafici = 3;
+    var grafici = 2;
     if(Object.keys(chart).length<grafici) {
         alert("Non puoi salvare un dashboard con meno di "+grafici+" grafici");
     }
@@ -222,10 +222,10 @@ function save_dashboard(){
     	for(var istance in chart) {
     		var chartdata = {};
     		var token = istance.split('_');
-    		var name ='';
+    		var name = token[1];
     		var typevalue;
-    		for(var i=0; i<token.length-2; i++) {
-    			name+=token[i];
+    		for(var i=1; i<token.length-2; i++) {
+    			name+='_'+token[i];
     		}
     		if(token[token.length-1]!=='valle') {
     			name+=token[token.length-2];
@@ -250,7 +250,7 @@ function save_dashboard(){
             type: "POST",
             data: json_board,
             contentType: "application/json",
-            dataType: "json", //per la response
+            //dataType: "json", //per la response
             success: function () {
                 alert("ok")
             },

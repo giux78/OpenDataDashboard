@@ -37,7 +37,11 @@ object ChartController extends Controller {
     Ok(Json.obj("status" -> "ok", "results" -> results))
   }
   
-  def saveDashboard = Action { 
-      Ok(Json.obj("status" -> "ok"))
+  def saveDashboard = Action { request =>
+      val body: AnyContent = request.body
+      val jsonBody: Option[JsValue] = body.asJson 
+      val json: JsValue = jsonBody.get
+      println(json)
+      Ok(Json.stringify(json))
     }
 }
