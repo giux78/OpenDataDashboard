@@ -49,6 +49,7 @@ object ChartController extends Controller {
     coll.insert(document)
     mongoClient.close
     val id: String = document.get("_id").toString()
+    //val id = "debug"
     println(id)
       Ok(Json.obj("code" -> id))
     }

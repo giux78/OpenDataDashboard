@@ -23,6 +23,7 @@
 	                	   //se non esiste il div (premuta la x per cancellarlo oppure prima richiesta) disegno il grafico
 	                	   if($('#' + name + '_' + chartType + '_div').length===0) {
 	                	       draw_chart(chartType, name + '_' + chartType + '_div', name+'_'+chartType, title, data);
+	                	       $("#salva").show();
 	                	   }
 	       	    		}
 	        	   })
@@ -38,7 +39,7 @@
 	function draw_chart(chartType, divID, name, title, data) {
 		if(chartType == 'comunita_valle') {
 		    //crea div
-            $('#chart_div').append('<div class="row"><div class="col-md-12"><section class="panel"><header class="panel-heading"><span id="'+name+'_title"></span><span class="tools pull-right"> <a href="javascript:;" class="fa fa-chevron-down"></a><a href="javascript:;" class="fa fa-cog"></a><a href="javascript:delete_chart(`'+name+'`);" class="fa fa-times"></a></span></header><div class="panel-body"><div id="'+ divID + '" style="width:100%;height:400px; text-align: center; margin:0 auto;"></div></div></section></div></div>')
+            $('#chart_div').append('<div class="row"><div class="col-md-12"><section class="panel"><header class="panel-heading"><span id="'+name+'_title"></span><span class="tools pull-right"> <a href="javascript:show_chart(`'+name+'`);" class="fa fa-chevron-down"></a><a href="javascript:hide_chart(`'+name+'`);" class="fa fa-chevron-up"></a><a href="javascript:delete_chart(`'+name+'`);" class="fa fa-times"></a></span></header><div class="panel-body"><div id="'+ divID + '" style="width:100%;height:400px; text-align: center; margin:0 auto;"></div></div></section></div></div>')
 			$('#'+name+'_title').html(title+" per Comunità di Valle")
 			//raggruppa i valori secondo specifiche di morris.js
 			//if risparmia il raggruppamento se è una seconda chiamata
@@ -50,7 +51,7 @@
 		}
 		//come sopra ma grafico di 800px
 		else if(chartType == 'comuni') {
-			$('#chart_div').append('<div class="row"><div class="col-md-12"><section class="panel"><header class="panel-heading"><span id="'+name+'_title"></span><span class="tools pull-right"> <a href="javascript:;" class="fa fa-chevron-down"></a><a href="javascript:;" class="fa fa-cog"></a><a href="javascript:delete_chart(`'+name+'`);" class="fa fa-times"></a></span></header><div class="panel-body"><div id="'+ divID + '" style="width:100%;height:800px; text-align: center; margin:0 auto;"></div></div></section></div></div>')
+			$('#chart_div').append('<div class="row"><div class="col-md-12"><section class="panel"><header class="panel-heading"><span id="'+name+'_title"></span><span class="tools pull-right"> <a href="javascript:show_chart(`'+name+'`);" class="fa fa-chevron-down"></a><a href="javascript:hide_chart(`'+name+'`);" class="fa fa-chevron-up"></a><a href="javascript:delete_chart(`'+name+'`);" class="fa fa-times"></a></span></header><div class="panel-body"><div id="'+ divID + '" style="width:100%;height:600px; text-align: center; margin:0 auto;"></div></div></section></div></div>')
 			$('#'+name+'_title').html(title+" per Comuni")
 			if(dizionario[name]===undefined) groupValue(name, data);
             drawComuniPlot(name,divID);
@@ -58,7 +59,7 @@
 		}
 		//TODO
 		else if(chartType == 'bar_chart') {
-    		$('#chart_div').append('<div class="row"><div class="col-md-12"><section class="panel"><header class="panel-heading"><span id="'+name+'_title"></span><span class="tools pull-right"> <a href="javascript:;" class="fa fa-chevron-down"></a><a href="javascript:;" class="fa fa-cog"></a><a href="javascript:delete_chart(`'+name+'`);" class="fa fa-times"></a></span></header><div class="panel-body"><div id="'+ divID + '" style="width:100%;height:400px; text-align: center; margin:0 auto;"></div></div></section></div></div>')
+    		$('#chart_div').append('<div class="row"><div class="col-md-12"><section class="panel"><header class="panel-heading"><span id="'+name+'_title"></span><span class="tools pull-right"> <a href="javascript:show_chart(`'+name+'`);" class="fa fa-chevron-down"></a><a href="javascript:hide_chart(`'+name+'`);" class="fa fa-chevron-up"></a><a href="javascript:delete_chart(`'+name+'`);" class="fa fa-times"></a></span></header><div class="panel-body"><div id="'+ divID + '" style="width:100%;height:400px; text-align: center; margin:0 auto;"></div></div></section></div></div>')
 			$('#'+name+'_title').html(title)
 		}
 	}
@@ -177,10 +178,11 @@ function createLegend(nome, divID) {
 
     for(var i=dizionario[nome].length-1; i>=0; i--) {
         //backquote: Alt + 0180
-        div.insertAdjacentHTML('afterend', '&nbsp;&nbsp;'+dizionario[nome][i]+'<input style="display: inline-block;"name="'+dizionario[nome][i]+'*'+nome+'" type="checkbox" value="html" checked="checked" onChange="changeData(`'+nome+'`,this)"/>');
+        //div.insertAdjacentHTML('afterend', '&nbsp;&nbsp;'+dizionario[nome][i]+'<input style="display: inline-block;"name="'+dizionario[nome][i]+'*'+nome+'" type="checkbox" value="html" checked="checked" onChange="changeData(`'+nome+'`,this)"/>');
+        div.insertAdjacentHTML('afterend', '<span class="label label-default" style="display: inline-block; margin:1px">'+dizionario[nome][i]+'<input name="'+dizionario[nome][i]+'*'+nome+'" type="checkbox" value="html" checked="checked" onChange="changeData(`'+nome+'`,this)"/></span>');
     }
     
-    div.insertAdjacentHTML('afterend', 'ALL<input style="display: inline-block;"name="ALL" type="checkbox" value="html" checked="checked" onChange="changeData(`'+nome+'`,this)"/>');
+    div.insertAdjacentHTML('afterend', '<span class="label label-info" style="display: inline-block; margin:1px">ALL<input name="ALL" type="checkbox" value="html" checked="checked" onChange="changeData(`'+nome+'`,this)"/></span>');
 
 }
 
@@ -211,6 +213,17 @@ function delete_chart(element) {
 	delete chart[element];
 }
 
+function hide_chart(element) {
+    //ottengo il nome dello span
+    // div->div->section->header->SPAN
+    $('#'+element+'_title').parent().parent().parent().parent().find( ".panel-body" ).hide(500);
+}
+
+function show_chart(element) {
+    //ottengo il nome dello span
+    // div->div->section->header->SPAN
+    $('#'+element+'_title').parent().parent().parent().parent().find( ".panel-body" ).show();
+}
 
 function save_dashboard(){
     var grafici = 2;
@@ -254,7 +267,8 @@ function save_dashboard(){
             contentType: "application/json",
             dataType: "json", //per la response
             success: function () {
-                alert("ok")
+                $("#salva").hide();
+                alert("ok");
             },
             error: function(xhr, status, error) {
               var err = eval("(" + xhr.responseText + ")");
