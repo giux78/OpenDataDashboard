@@ -76,27 +76,25 @@ var chart = {};
 
 //raggruppa i valori secondo gli standard di morris.js, creando anche la struttura che li contiene
 function groupValue(nome, data) {
+    if(dizionario[nome]===undefined) {
+        dizionario[nome] = [nome];
+        dizionario[nome] = [];
+    }
+    if(checked[nome]===undefined) {
+        checked[nome] = [nome];
+        checked[nome] = [];
+    }
+    if(chart[nome]===undefined) {
+        chart[nome] = [nome];
+        chart[nome] = [];
+    }
+    if(allData[nome]===undefined) {
+        allData[nome] = [nome];
+        allData[nome] = [];
+    }
     for(var i=0; i<data.length; i++) {
         var anno = data[i].anno;
         var descriz = data[i].descriz;
-        var valore = data[i].valore;
-
-        if(dizionario[nome]===undefined) {
-            dizionario[nome] = [nome];
-            dizionario[nome] = [];
-        }
-        if(checked[nome]===undefined) {
-            checked[nome] = [nome];
-            checked[nome] = [];
-        }
-        if(chart[nome]===undefined) {
-            chart[nome] = [nome];
-            chart[nome] = [];
-        }
-        if(allData[nome]===undefined) {
-            allData[nome] = [nome];
-            allData[nome] = [];
-        }
 
         //creo l'array con tutti i campi
         var index = findInDictionary(nome, descriz);
@@ -266,16 +264,17 @@ function save_dashboard(){
             data: json_board,
             contentType: "application/json",
             dataType: "json", //per la response
-            success: function () {
+            success: function (result) {
                 $("#salva").hide();
-                alert("ok");
+                document.getElementById("salva").insertAdjacentHTML('afterend', '<span class="label label-default" style="display: inline-block; margin:1px">'+result.code+'</span>');
+
+                alert("Dashboard salvato con codice: "+result.code);
             },
             error: function(xhr, status, error) {
               var err = eval("(" + xhr.responseText + ")");
               alert(err.Message);
             }
         });
-        alert("Dashboard salvato con codice: tbd");
     }
 	
 }
