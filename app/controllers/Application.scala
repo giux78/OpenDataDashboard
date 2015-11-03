@@ -24,4 +24,8 @@ object Application extends Controller {
    def create_dashboard = Action {
     Ok(views.html.create_dashboard("Create your Dashboard"))
   }
+  
+   def view_dashboard = Action {
+    Ok(views.html.view_dashboard("Use your Dashboard"))
+  }
 }

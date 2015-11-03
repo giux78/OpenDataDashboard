@@ -7,6 +7,7 @@ import com.mongodb.casbah.Imports._
 import scala.collection.mutable.ListBuffer
 import play.api.libs.json.JsValue
 import play.api.libs.json.Json
+import com.mongodb.casbah.Imports.ObjectId
 
 object ChartController extends Controller {
 
@@ -53,4 +54,15 @@ object ChartController extends Controller {
     println(id)
       Ok(Json.obj("code" -> id))
     }
+    
+  def boardFromId(dashboard_id: String) = Action {
+    val mongoClient = MongoClient("localhost", 27017)
+    val db = mongoClient("meta_ckan")
+    val coll = db("dashboard_saved")
+    val id = new ObjectId(dashboard_id) 
+    val board = coll.findOne("_id" $eq id)
+    val results = Json.parse(board.get.toString())
+    mongoClient.close
+    Ok(Json.obj("status" -> "ok", "results" -> results\"data"))
+  }
 }

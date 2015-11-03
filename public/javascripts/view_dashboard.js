@@ -2,8 +2,42 @@
  * JQUERY FUNCTION $(document).ready() at the end of file
  */
  
+ //chiamata dal form
+ function visualize_dashboard() {
+     var id = $("#text_form").val()
+     if(id!=="") {
+		$.ajax({
+			url: '/dashboard/' + id,
+		    type: "GET",
+			success: function(json) {
+	           if(json.status==="ok") {
+	               draw_dashboard(json.results)
+	               $("#span_reload").text("Clicca qui per usare un'altra dashboard al posto di quella in uso")
+	               $("#dashboard_form").hide()
+	           }
+	           else {
+	               alert("Codice non riconosciuto")
+	           }
+			},
+			error: function() {
+
+			}
+		});
+     }
+ }
+ 
+ function draw_dashboard(data) {
+     for (var chartdata in data) {
+         var name = data[chartdata].name
+         var type = data[chartdata].chartType
+         checked[name + '_' + type] = [name + '_' + type]
+         checked[name + '_' + type] = data[chartdata].checked
+         add_chart(name, type)
+     }
+ }
+ 
  //funzione principale, dal nome prende il dataset e chiama le funzioni per creare html e grafico
-    function add_chart(name) {
+    function add_chart(name, type) {
         console.log("chart");
 		$.ajax({
 			url: '/chart/' + name,
@@ -21,9 +55,8 @@
 	                   if (data.length != 0){
 	                	   //chartType: comunita_valle | comuni | bar_chart
 	                	   //se non esiste il div (premuta la x per cancellarlo oppure prima richiesta) disegno il grafico
-	                	   if($('#' + name + '_' + chartType + '_div').length===0) {
+	                	   if($('#' + name + '_' + chartType + '_div').length===0 && chartType===type) {
 	                	       draw_chart(chartType, name + '_' + chartType + '_div', name+'_'+chartType, title, data);
-	                	       $("#salva").show();
 	                	   }
 	       	    		}
 	        	   })
@@ -76,25 +109,26 @@ var chart = {};
 
 //raggruppa i valori secondo gli standard di morris.js, creando anche la struttura che li contiene
 function groupValue(nome, data) {
-    if(dizionario[nome]===undefined) {
-        dizionario[nome] = [nome];
-        dizionario[nome] = [];
-    }
-    if(checked[nome]===undefined) {
-        checked[nome] = [nome];
-        checked[nome] = [];
-    }
-    if(chart[nome]===undefined) {
-        chart[nome] = [nome];
-        chart[nome] = [];
-    }
-    if(allData[nome]===undefined) {
-        allData[nome] = [nome];
-        allData[nome] = [];
-    }
     for(var i=0; i<data.length; i++) {
         var anno = data[i].anno;
         var descriz = data[i].descriz;
+        var valore = data[i].valore;
+        if(chart[nome]===undefined) {
+            chart[nome] = [nome];
+            chart[nome] = [];
+        }
+        if(dizionario[nome]===undefined) {
+            dizionario[nome] = [nome];
+            dizionario[nome] = [];
+        }
+        if(checked[nome]===undefined) {
+            checked[nome] = [nome];
+            checked[nome] = [];
+        }
+        if(allData[nome]===undefined) {
+            allData[nome] = [nome];
+            allData[nome] = [];
+        }
 
         //creo l'array con tutti i campi
         var index = findInDictionary(nome, descriz);
@@ -102,7 +136,7 @@ function groupValue(nome, data) {
         if(index===-1) {
             dizionario[nome].push(descriz);
             //dichiaro che questo array è visibile
-            checked[nome].push(true);
+            //checked[nome].push(true);
             //metto index alla posizione del nuovo array
         }
         if(allData[nome][anno]===undefined) {
@@ -170,19 +204,21 @@ function createDataToPlot(nome) {
     return list
 }
 
+
 //appende appena dopo il div del chart tutti i checkbox del grafico
 function createLegend(nome, divID) {
     var div = document.getElementById(divID);
-
     for(var i=dizionario[nome].length-1; i>=0; i--) {
         //backquote: Alt + 0180
         //div.insertAdjacentHTML('afterend', '&nbsp;&nbsp;'+dizionario[nome][i]+'<input style="display: inline-block;"name="'+dizionario[nome][i]+'*'+nome+'" type="checkbox" value="html" checked="checked" onChange="changeData(`'+nome+'`,this)"/>');
-        div.insertAdjacentHTML('afterend', '<span class="label label-default" style="display: inline-block; margin:1px">'+dizionario[nome][i]+'<input name="'+dizionario[nome][i]+'*'+nome+'" type="checkbox" value="html" checked="checked" onChange="changeData(`'+nome+'`,this)"/></span>');
+        if(checked[nome][i]) {
+            div.insertAdjacentHTML('afterend', '<span class="label label-default" style="display: inline-block; margin:1px">'+dizionario[nome][i]+'<input name="'+dizionario[nome][i]+'*'+nome+'" type="checkbox" value="html" checked="checked" onChange="changeData(`'+nome+'`,this)"/></span>');
+        }
     }
-    
-    div.insertAdjacentHTML('afterend', '<span class="label label-info" style="display: inline-block; margin:1px">ALL<input name="ALL" type="checkbox" value="html" checked="checked" onChange="changeData(`'+nome+'`,this)"/></span>');
+    //div.insertAdjacentHTML('afterend', '<span class="label label-info" style="display: inline-block; margin:1px">ALL<input name="ALL" type="checkbox" value="html" checked="checked" onChange="changeData(`'+nome+'`,this)"/></span>');
 
 }
+
 
 //funzione chiamata quando viene premuta una checkbox, modifica la legenda i il grafico
 function changeData(nome, element) {
@@ -222,7 +258,7 @@ function show_chart(element) {
     // div->div->section->header->SPAN
     $('#'+element+'_title').parent().parent().parent().parent().find( ".panel-body" ).show();
 }
-
+/*
 function save_dashboard(){
     var grafici = 2;
     if(Object.keys(chart).length<grafici) {
@@ -234,17 +270,15 @@ function save_dashboard(){
     		var chartdata = {};
     		var token = istance.split('_');
     		var name = token[0];
-    		var typevalue = '';
+    		var typevalue;
     		for(var i=1; i<token.length-2; i++) {
     			name+='_'+token[i];
     		}
     		if(token[token.length-1]!=='valle') {
-    		    if(token.length>2) {
-    			    name+=token[token.length-2];
-    		    }
-    		    typevalue=token[token.length-1];
+    			name+=token[token.length-2];
+    			typevalue=token[token.length-1];
     		}
-    		else{
+    		else {
     			typevalue=token[token.length-2]+'_'+token[token.length-1];
     		}
     		chartdata['name']=['name'];
@@ -266,38 +300,21 @@ function save_dashboard(){
             data: json_board,
             contentType: "application/json",
             dataType: "json", //per la response
-            success: function (result) {
+            success: function () {
                 $("#salva").hide();
-                document.getElementById("salva").insertAdjacentHTML('afterend', '<span class="label label-default" style="display: inline-block; margin:1px">'+result.code+'</span>');
-
-                alert("Dashboard salvato con codice: "+result.code);
+                alert("ok");
             },
             error: function(xhr, status, error) {
               var err = eval("(" + xhr.responseText + ")");
               alert(err.Message);
             }
         });
+        alert("Dashboard salvato con codice: tbd");
     }
 	
-}
+}*/
 	
 //quando la pagina è caricata, carico la lista dei dataset disponibili	
 $(document).ready(function() {
 
-	//prendo tutti i titoli dei dataset e li metto nel menu
-	//ogni grafico rimanda alla pagina stessa e attiva una funzione javascript
-	$.ajax({
-		url: '/chart_titles',
-		async: true,
-	    type: "GET",
-		success: function(datasets) {
-			var results = _.uniq(datasets.results,'dataset_name')
-			results.map(function(item){
-				var name = item.dataset_name
-				$('#trentino_chart').append('<li><a href=# onclick="add_chart(`'+name+'`)" id="chart_'+name+'">' + item.dataset_title + '</a></li>')
-			})
-		},
-	    error: function(data) {
-        }
     })
-})

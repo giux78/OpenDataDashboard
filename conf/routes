@@ -11,10 +11,12 @@ GET   /dashboard_chart/:chart_name               controllers.Application.chart(c
 # Chart Controller
 GET   /chart_titles        controllers.ChartController.chart_titles
 GET   /chart/:chart_name   controllers.ChartController.chartsFromName(chart_name)
-POST    /post_dashboard     controllers.ChartController.saveDashboard
 
-# Dashboard creator
-GET   /create_dashboard    controllers.Application.create_dashboard
+# Dashboard manager
+GET   /create_dashboard             controllers.Application.create_dashboard
+POST    /post_dashboard             controllers.ChartController.saveDashboard
+GET     /view_dashboard             controllers.Application.view_dashboard
+GET     /dashboard/:dashboard_id    controllers.ChartController.boardFromId(dashboard_id) 
 
 # Map static resources from the /public folder to the /assets URL path
 GET   /assets/*file        controllers.Assets.at(path="/public", file)
