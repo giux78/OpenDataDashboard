@@ -1,5 +1,5 @@
-New log file opened at Wed Nov 04 09:05:51 CET 2015 by 5996@Gabry-PC
-jvm 5996@Gabry-PC
+New log file opened at Wed Nov 04 20:38:43 CET 2015 by 5584@Gabry-PC
+jvm 5584@Gabry-PC
 jvm vmName=Java HotSpot(TM) Client VM vmVendor=Oracle Corporation vmVersion=25.51-b03
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in C:\Users\Gabry147\OpenDataDashboard\project, returning: (opendatadashboard-build)
 Loading project definition from C:\Users\Gabry147\OpenDataDashboard\project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@84cc69, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@1c65a84, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -67,7 +67,7 @@ Set current project to OpenDataDashboard (in build file:/C:/Users/Gabry147/OpenD
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@62f5f6, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@2bf29d, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -84,12 +84,12 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 2 s, completed 4-nov-2015 9.06.02
+Total time: 2 s, completed 4-nov-2015 20.38.53
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/Gabry147/OpenDataDashboard/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@18db2b3, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@e6db8, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -106,18 +106,18 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 1 s, completed 4-nov-2015 9.06.03
+Total time: 1 s, completed 4-nov-2015 20.38.54
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/Gabry147/OpenDataDashboard/}root/compile:mainClass
 Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@141599c, check cycles: false
-Total time: 0 s, completed 4-nov-2015 9.06.03
+Running task... Cancel: sbt.server.ServerTaskCancellation@91052d, check cycles: false
+Total time: 0 s, completed 4-nov-2015 20.38.54
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/Gabry147/OpenDataDashboard/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@8dcbd2, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@31aeb5, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -134,6 +134,289 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 1 s, completed 4-nov-2015 9.06.04
+Total time: 1 s, completed 4-nov-2015 20.38.55
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@16ef73e, check cycles: false
+Total time: 0 s, completed 4-nov-2015 20.39.29
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Gabry147/OpenDataDashboard/}root/*:playForkConfig
+Evaluating tasks: *:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@cc3acb, check cycles: false
+Total time: 1 s, completed 4-nov-2015 20.39.33
+> server-post-command-cleanup
+> server-handle-next-server-request
+> root/playForkNotifyStart http://localhost:9000
+Evaluating tasks: *:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@1c35d1d, check cycles: false
+Total time: 0 s, completed 4-nov-2015 20.39.35
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Gabry147/OpenDataDashboard/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@820e00, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Gabry147\OpenDataDashboard\conf\application.conf,C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes\application.conf)
+	(C:\Users\Gabry147\OpenDataDashboard\conf\routes,C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes\routes)
+Total time: 2 s, completed 4-nov-2015 20.39.46
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Gabry147/OpenDataDashboard/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@57de1b, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Gabry147\OpenDataDashboard\conf\application.conf,C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes\application.conf)
+	(C:\Users\Gabry147\OpenDataDashboard\conf\routes,C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes\routes)
+Total time: 2 s, completed 4-nov-2015 20.59.18
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Gabry147/OpenDataDashboard/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@108b824, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Gabry147\OpenDataDashboard\conf\application.conf,C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes\application.conf)
+	(C:\Users\Gabry147\OpenDataDashboard\conf\routes,C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes\routes)
+Total time: 2 s, completed 4-nov-2015 21.00.25
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Gabry147/OpenDataDashboard/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@12337a1, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Gabry147\OpenDataDashboard\conf\application.conf,C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes\application.conf)
+	(C:\Users\Gabry147\OpenDataDashboard\conf\routes,C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes\routes)
+Total time: 2 s, completed 4-nov-2015 21.03.13
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Gabry147/OpenDataDashboard/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@66274f, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Gabry147\OpenDataDashboard\conf\application.conf,C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes\application.conf)
+	(C:\Users\Gabry147\OpenDataDashboard\conf\routes,C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes\routes)
+Total time: 2 s, completed 4-nov-2015 21.04.39
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Gabry147/OpenDataDashboard/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@1ca3dd0, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Gabry147\OpenDataDashboard\conf\application.conf,C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes\application.conf)
+	(C:\Users\Gabry147\OpenDataDashboard\conf\routes,C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes\routes)
+Total time: 2 s, completed 4-nov-2015 21.07.10
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Gabry147/OpenDataDashboard/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@19afb4f, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Gabry147\OpenDataDashboard\conf\application.conf,C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes\application.conf)
+	(C:\Users\Gabry147\OpenDataDashboard\conf\routes,C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes\routes)
+Total time: 2 s, completed 4-nov-2015 21.42.35
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Gabry147/OpenDataDashboard/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@f2103, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Gabry147\OpenDataDashboard\conf\application.conf,C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes\application.conf)
+	(C:\Users\Gabry147\OpenDataDashboard\conf\routes,C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes\routes)
+Total time: 2 s, completed 4-nov-2015 21.44.08
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Gabry147/OpenDataDashboard/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@269a23, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Gabry147\OpenDataDashboard\conf\application.conf,C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes\application.conf)
+	(C:\Users\Gabry147\OpenDataDashboard\conf\routes,C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes\routes)
+Total time: 2 s, completed 4-nov-2015 21.49.44
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Gabry147/OpenDataDashboard/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@1e7aff6, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 5 s, completed 4-nov-2015 22.15.11
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Gabry147/OpenDataDashboard/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@8de838, check cycles: false
+Total time: 0 s, completed 4-nov-2015 22.15.12
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@f9901d, check cycles: false
+Total time: 0 s, completed 4-nov-2015 22.20.39
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Gabry147/OpenDataDashboard/}root/*:playForkConfig
+Evaluating tasks: *:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@12a59b9, check cycles: false
+Total time: 0 s, completed 4-nov-2015 22.20.44
 > server-post-command-cleanup
 > server-handle-next-server-request

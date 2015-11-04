@@ -220,11 +220,24 @@ Behavior:
 function drawPlot(nome, divID, tipo) {
     var hideHoverLegend = true; //show legend when cursor is on chart
     if(tipo ==='comuni') hideHoverLegend='always'; //hide legend
+    max = dizionario[nome].length;
+    var colorList = []
+    for(var i=0; i<max; i++) {
+            //random color in 3 digits exa (in decimal notation)
+            //floor = toInt
+            colorNumber1 = Math.floor(Math.random()*255);
+            colorNumber2 = Math.floor(Math.random()*255);
+            colorNumber3 = Math.floor(Math.random()*255);
+            color = "rgb("+colorNumber1+","+colorNumber2+","+colorNumber3+")"
+            console.log(color);
+            colorList.push(color)
+    }
     chart[nome] = Morris.Line({
         element: divID,
         data: createDataToPlot(nome), //filter function based on checked
         xkey: 'anno',
         ykeys: dizionario[nome],
+        lineColors: colorList,
         labels: dizionario[nome],
         hideHover: hideHoverLegend
     });
@@ -281,29 +294,29 @@ function createLegend(nome, divID) {
     //for every label, starting from the last one because 'afterend' invert the order 
     //backquote: Alt + 0180
     //creation of html string
-    var html_leg_1 = '<span class="label label-default" style="display: inline-block; margin:1px">'; //+label
+    var html_leg_0 = '<span class="label label-default" style="display: inline-block; margin:1px; background-color:';//+color
+    var html_leg_1 = '">'; //+label
     var html_leg_2 = '<input name="'; //+nome*label
     var html_leg_3 = '" type="checkbox" value="html" ';//+value checked
     var html_leg_4 = ' onChange="changeData(`';//+name
     var html_leg_5 = '`,this)"/></span>';
-    for(var i=dizionario[nome].length-1; i>=0; i--) {
-        //compose html with variables
-        /*
-            legend element always created in create_dashboard 
-            (type condition is needed, at first run checked are all true, but if chart is deleted array checked mantain old value, so checked[i] can be false)
-            legend element created only if displayed in view Dashboard
-        */
+    console.log("colori")
+    //for every label, take label name and index
+    chart[nome].options.labels.forEach(function(label, i){
+        //find the label in dizionario
+        var index = findInDictionary(nome, label);
+        var isOn = "";
+        //if is checked, add checked attribute
+        if(checked[nome][index]) isOn = "checked";
+        //create and add html
         if(checked[nome][i] || isCreate===true) {
-            var isOn = "";
-            //if is checked, add checked attribute
-            if(checked[nome][i]) isOn = "checked";
-            div.insertAdjacentHTML('afterend', html_leg_1 + dizionario[nome][i] + html_leg_2 + dizionario[nome][i]+'*'+nome + html_leg_3 + isOn + html_leg_4 + nome + html_leg_5);
+            div.insertAdjacentHTML('afterend', html_leg_0 + chart[nome].options.lineColors[i] + html_leg_1 + label + html_leg_2 + dizionario[nome][i]+'*'+nome + html_leg_3 + isOn + html_leg_4 + nome + html_leg_5);
         }
-    }
+    });
     //create button disable/enable all only in create_dashboard
     if(isCreate) {
 		//DON'T change 'ALL', is needed to match on changeData function
-        div.insertAdjacentHTML('afterend', html_leg_1 + 'DE/SELEZIONA TUTTO'+ html_leg_2 + 'ALL' +html_leg_3 + "checked" + html_leg_4 + nome + html_leg_5);
+        div.insertAdjacentHTML('afterend', html_leg_0 + html_leg_1 + 'DE/SELEZIONA TUTTO'+ html_leg_2 + 'ALL' +html_leg_3 + "checked" + html_leg_4 + nome + html_leg_5);
     }
 }
 
