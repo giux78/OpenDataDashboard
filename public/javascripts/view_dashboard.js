@@ -227,7 +227,6 @@ function changeData(nome, element) {
     if(element.name === 'ALL') {
         for(var i=0; i<checked[nome].length; i++) {
             checked[nome][i] = element.checked;
-            //console.log(dizionario[nome][i]);
             $('input[name="'+dizionario[nome][i]+'*'+nome+'"]')[0].checked=element.checked;
         }
     }

@@ -1,5 +1,5 @@
-New log file opened at Tue Nov 03 13:34:31 CET 2015 by 2900@Gabry-PC
-jvm 2900@Gabry-PC
+New log file opened at Wed Nov 04 09:05:51 CET 2015 by 5996@Gabry-PC
+jvm 5996@Gabry-PC
 jvm vmName=Java HotSpot(TM) Client VM vmVendor=Oracle Corporation vmVersion=25.51-b03
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in C:\Users\Gabry147\OpenDataDashboard\project, returning: (opendatadashboard-build)
 Loading project definition from C:\Users\Gabry147\OpenDataDashboard\project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@ac7626, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@84cc69, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -67,7 +67,7 @@ Set current project to OpenDataDashboard (in build file:/C:/Users/Gabry147/OpenD
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@21a276, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@62f5f6, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -84,12 +84,12 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 2 s, completed 3-nov-2015 13.34.46
+Total time: 2 s, completed 4-nov-2015 9.06.02
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/Gabry147/OpenDataDashboard/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@19a1743, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@18db2b3, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -106,18 +106,18 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 1 s, completed 3-nov-2015 13.34.47
+Total time: 1 s, completed 4-nov-2015 9.06.03
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/Gabry147/OpenDataDashboard/}root/compile:mainClass
 Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@6131e8, check cycles: false
-Total time: 0 s, completed 3-nov-2015 13.34.47
+Running task... Cancel: sbt.server.ServerTaskCancellation@141599c, check cycles: false
+Total time: 0 s, completed 4-nov-2015 9.06.03
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/Gabry147/OpenDataDashboard/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@842059, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@8dcbd2, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -134,6 +134,6 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 1 s, completed 3-nov-2015 13.34.48
+Total time: 1 s, completed 4-nov-2015 9.06.04
 > server-post-command-cleanup
 > server-handle-next-server-request
