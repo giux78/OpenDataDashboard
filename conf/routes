@@ -19,4 +19,7 @@ GET     /view_dashboard             controllers.Application.view_dashboard
 GET     /dashboard/:dashboard_id    controllers.ChartController.boardFromId(dashboard_id) 
 
 # Map static resources from the /public folder to the /assets URL path
-GET   /assets/*file        controllers.Assets.at(path="/public", file)
+GET   /assets/*file     controllers.Assets.at(path="/public", file)
+
+# Real time
+GET /realtime/:label_type        controllers.RealtimeController.viewRealtimeData(label_type)

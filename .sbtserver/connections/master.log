@@ -1,13 +1,13 @@
-New log file opened at Wed Nov 04 22:21:50 CET 2015 by 1560@Gabry-PC
-Taking next connection to: 61857
-New client attempting to connect on port: 61858-61857
-  Address = /192.168.1.83:61857
-This client on port 61858 has uuid ed91f50d-4dc7-47f6-91a5-33161121f4c0 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-ed91f50d-4dc7-47f6-91a5-33161121f4c0
-Taking next connection to: 61857
-New client attempting to connect on port: 61859-61857
-  Address = /192.168.1.83:61857
-Handshake exception on socket: 61859
+New log file opened at Thu Nov 05 17:16:15 CET 2015 by 9668@Gabry-PC
+Taking next connection to: 51043
+New client attempting to connect on port: 51045-51043
+  Address = /10.196.218.79:51043
+This client on port 51045 has uuid 77e24cda-16da-484d-a398-75190a9e90cd configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-77e24cda-16da-484d-a398-75190a9e90cd
+Taking next connection to: 51043
+New client attempting to connect on port: 51046-51043
+  Address = /10.196.218.79:51043
+Handshake exception on socket: 51046
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -23,15 +23,15 @@ Caused by: java.net.SocketException: Software caused connection abort: recv fail
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 61857
-New client attempting to connect on port: 61860-61857
-  Address = /192.168.1.83:61857
-This client on port 61860 has uuid 026d80ab-3413-4c06-941c-2e919446c6e0 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-ed91f50d-4dc7-47f6-91a5-33161121f4c0, activator-026d80ab-3413-4c06-941c-2e919446c6e0
-Taking next connection to: 61857
-New client attempting to connect on port: 61877-61857
-  Address = /192.168.1.83:61857
-Handshake exception on socket: 61877
+Taking next connection to: 51043
+New client attempting to connect on port: 51047-51043
+  Address = /10.196.218.79:51043
+This client on port 51047 has uuid d575d4c3-0745-49ce-8295-b976e311c5c2 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-77e24cda-16da-484d-a398-75190a9e90cd, activator-d575d4c3-0745-49ce-8295-b976e311c5c2
+Taking next connection to: 51043
+New client attempting to connect on port: 51058-51043
+  Address = /10.196.218.79:51043
+Handshake exception on socket: 51058
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -47,132 +47,48 @@ Caused by: java.net.SocketException: Software caused connection abort: recv fail
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 61857
-New client attempting to connect on port: 61878-61857
-  Address = /192.168.1.83:61857
-This client on port 61878 has uuid 85a8ca17-a833-4147-859e-b9fab0b67eb2 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: activator-026d80ab-3413-4c06-941c-2e919446c6e0, play-fork-run-85a8ca17-a833-4147-859e-b9fab0b67eb2
-Taking next connection to: 61857
+Taking next connection to: 51043
+New client attempting to connect on port: 51059-51043
+  Address = /10.196.218.79:51043
+This client on port 51059 has uuid 4cca9f01-a2ce-435e-9f48-b4d6353813e1 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-77e24cda-16da-484d-a398-75190a9e90cd, activator-d575d4c3-0745-49ce-8295-b976e311c5c2, play-fork-run-4cca9f01-a2ce-435e-9f48-b4d6353813e1
+Taking next connection to: 51043
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 61857
+Taking next connection to: 51043
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 61857
+Taking next connection to: 51043
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 61857
+Taking next connection to: 51043
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 61857
+Taking next connection to: 51043
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 61857
+Taking next connection to: 51043
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 61857
+Taking next connection to: 51043
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 61857
+Taking next connection to: 51043
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 61857
+Taking next connection to: 51043
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 61857
+Taking next connection to: 51043
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 61857
+Taking next connection to: 51043
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 61857
+Taking next connection to: 51043
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 61857
+Taking next connection to: 51043
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 61857
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 61857
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 61857
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 61857
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 61857
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 61857
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 61857
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 61857
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 61857
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 61857
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 61857
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 61857
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 61857
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 61857
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 61857
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 61857
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 61857
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 61857
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 61857
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 61857
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 61857
-New client attempting to connect on port: 62487-61857
-  Address = /192.168.1.83:61857
-Handshake exception on socket: 62487
-sbt.impl.ipc.HandshakeException: Unable to perform handshake
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
-	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
-	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
-Caused by: java.net.SocketException: Software caused connection abort: recv failed
-	at java.net.SocketInputStream.socketRead0(Native Method)
-	at java.net.SocketInputStream.socketRead(Unknown Source)
-	at java.net.SocketInputStream.read(Unknown Source)
-	at java.net.SocketInputStream.read(Unknown Source)
-	at java.io.BufferedInputStream.fill(Unknown Source)
-	at java.io.BufferedInputStream.read(Unknown Source)
-	at java.io.DataInputStream.readInt(Unknown Source)
-	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
-	... 2 more
-Taking next connection to: 61857
-New client attempting to connect on port: 62488-61857
-  Address = /192.168.1.83:61857
-This client on port 62488 has uuid 38e06a0b-579b-4cd4-a698-ab5d7434ac7c configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: activator-026d80ab-3413-4c06-941c-2e919446c6e0, play-fork-run-38e06a0b-579b-4cd4-a698-ab5d7434ac7c
-Taking next connection to: 61857
+Taking next connection to: 51043
