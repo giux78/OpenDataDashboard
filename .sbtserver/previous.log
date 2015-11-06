@@ -1,5 +1,5 @@
-New log file opened at Thu Nov 05 20:05:47 CET 2015 by 9512@Gabry-PC
-jvm 9512@Gabry-PC
+New log file opened at Fri Nov 06 11:20:23 CET 2015 by 7184@Gabry-PC
+jvm 7184@Gabry-PC
 jvm vmName=Java HotSpot(TM) Client VM vmVendor=Oracle Corporation vmVersion=25.51-b03
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in C:\Users\Gabry147\OpenDataDashboard\project, returning: (opendatadashboard-build)
 Loading project definition from C:\Users\Gabry147\OpenDataDashboard\project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@457ac8, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@84cc69, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -67,626 +67,7 @@ Set current project to OpenDataDashboard (in build file:/C:/Users/Gabry147/OpenD
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@f3ed4f, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 2 s, completed 5-nov-2015 20.06.03
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/Gabry147/OpenDataDashboard/}root/compile:discoveredMainClasses
-Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@61adbf, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 1 s, completed 5-nov-2015 20.06.04
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/Gabry147/OpenDataDashboard/}root/compile:mainClass
-Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@321f3c, check cycles: false
-Total time: 0 s, completed 5-nov-2015 20.06.04
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/Gabry147/OpenDataDashboard/}root/compile:discoveredMainClasses
-Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@182803e, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 1 s, completed 5-nov-2015 20.06.05
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@15a4760, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set(C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala)
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala)
-
-Read from stdout: Compiling 1 Scala source to C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes...
-Compiling 1 Scala source to C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes...
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Running cached compiler 1ac71bd, interfacing (CompilerInterface) with Scala compiler version 2.11.6
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	C:\Program Files (x86)\Java\jre1.8.0_51\lib\resources.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\rt.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\jsse.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\jce.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\charsets.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\jfr.jar;C:\Program Files (x86)\Java\jre1.8.0_51\classes;C:\Users\Gabry147\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
-	-classpath
-	C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.0.2.jar;C:\Users\Gabry147\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.1.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.18.2-GA.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe\config\bundles\config-1.2.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.3.jar;C:\Users\Gabry147\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.6.jar;C:\Users\Gabry147\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.3.2.jar;C:\Users\Gabry147\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.3.2.jar;C:\Users\Gabry147\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.3.2.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.1.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\Gabry147\.ivy2\cache\io.netty\netty\bundles\netty-3.9.8.Final.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.2.jar;C:\Users\Gabry147\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.6.jar;C:\Users\Gabry147\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.6.jar;C:\Users\Gabry147\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.6.jar;C:\Users\Gabry147\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.1.jar;C:\Users\Gabry147\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.4.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.4.jar;C:\Users\Gabry147\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.9.jar;C:\Users\Gabry147\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Gabry147\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Gabry147\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\Gabry147\.ivy2\cache\com.h2database\h2\jars\h2-1.3.175.jar;C:\Users\Gabry147\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\anorm_2.11\jars\anorm_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.jsuereth\scala-arm_2.11\jars\scala-arm_2.11-1.4.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-lang.plugins\scala-continuations-library_2.11\bundles\scala-continuations-library_2.11-1.0.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.8.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.google.guava\guava\bundles\guava-16.0.1.jar;C:\Users\Gabry147\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.8.15.jar;C:\Users\Gabry147\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Gabry147\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\Gabry147\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\Gabry147\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\Gabry147\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\casbah-commons_2.11\jars\casbah-commons_2.11-2.8.2.jar;C:\Users\Gabry147\.ivy2\cache\com.github.nscala-time\nscala-time_2.11\jars\nscala-time_2.11-1.0.0.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\mongo-java-driver\jars\mongo-java-driver-2.13.2.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\casbah-core_2.11\jars\casbah-core_2.11-2.8.2.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\casbah-query_2.11\jars\casbah-query_2.11-2.8.2.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\casbah-gridfs_2.11\jars\casbah-gridfs_2.11-2.8.2.jar
-Scala compilation took 3.674315017 s
-Invalidating C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala...
-Invalidating (transitively) by inheritance from C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala...
-Initial set of included nodes: Set(C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala)
-Invalidated by transitive inheritance dependency: Set(C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala)
-The C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala source file has the following regular definitions changed:
-	.
-All member reference dependencies will be considered within this context.
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 4 s, completed 5-nov-2015 20.52.05
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@128334a, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala)
-
-Read from stdout: Compiling 1 Scala source to C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes...
-Compiling 1 Scala source to C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes...
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Running cached compiler 50925d, interfacing (CompilerInterface) with Scala compiler version 2.11.6
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	C:\Program Files (x86)\Java\jre1.8.0_51\lib\resources.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\rt.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\jsse.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\jce.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\charsets.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\jfr.jar;C:\Program Files (x86)\Java\jre1.8.0_51\classes;C:\Users\Gabry147\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
-	-classpath
-	C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.0.2.jar;C:\Users\Gabry147\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.1.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.18.2-GA.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe\config\bundles\config-1.2.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.3.jar;C:\Users\Gabry147\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.6.jar;C:\Users\Gabry147\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.3.2.jar;C:\Users\Gabry147\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.3.2.jar;C:\Users\Gabry147\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.3.2.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.1.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\Gabry147\.ivy2\cache\io.netty\netty\bundles\netty-3.9.8.Final.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.2.jar;C:\Users\Gabry147\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.6.jar;C:\Users\Gabry147\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.6.jar;C:\Users\Gabry147\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.6.jar;C:\Users\Gabry147\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.1.jar;C:\Users\Gabry147\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.4.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.4.jar;C:\Users\Gabry147\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.9.jar;C:\Users\Gabry147\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Gabry147\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Gabry147\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\Gabry147\.ivy2\cache\com.h2database\h2\jars\h2-1.3.175.jar;C:\Users\Gabry147\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\anorm_2.11\jars\anorm_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.jsuereth\scala-arm_2.11\jars\scala-arm_2.11-1.4.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-lang.plugins\scala-continuations-library_2.11\bundles\scala-continuations-library_2.11-1.0.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.8.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.google.guava\guava\bundles\guava-16.0.1.jar;C:\Users\Gabry147\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.8.15.jar;C:\Users\Gabry147\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Gabry147\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\Gabry147\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\Gabry147\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\Gabry147\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\casbah-commons_2.11\jars\casbah-commons_2.11-2.8.2.jar;C:\Users\Gabry147\.ivy2\cache\com.github.nscala-time\nscala-time_2.11\jars\nscala-time_2.11-1.0.0.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\mongo-java-driver\jars\mongo-java-driver-2.13.2.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\casbah-core_2.11\jars\casbah-core_2.11-2.8.2.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\casbah-query_2.11\jars\casbah-query_2.11-2.8.2.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\casbah-gridfs_2.11\jars\casbah-gridfs_2.11-2.8.2.jar
-Read from stdout: C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:1: expected class or object definition
-C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:1: expected class or object definition
-Read from stdout: <div class="row">
-<div class="row">
-Read from stdout: ^
-^
-Read from stdout: C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:2: expected class or object definition
-C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:2: expected class or object definition
-Read from stdout: <div class="col-lg-12">
-    <div class="col-lg-12">
-Read from stdout: ^
-    ^
-Read from stdout: C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:3: expected class or object definition
-C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:3: expected class or object definition
-Read from stdout: <div id="chart_div">
-        <div id="chart_div">
-Read from stdout: ^
-        ^
-Read from stdout: C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:4: expected class or object definition
-C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:4: expected class or object definition
-Read from stdout: </div>
-        </div>
-Read from stdout: ^
-        ^
-Read from stdout: C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:5: expected class or object definition
-C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:5: expected class or object definition
-Read from stdout: </div>
-    </div>
-Read from stdout: ^
-    ^
-Read from stdout: C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:6: expected class or object definition
-C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:6: expected class or object definition
-Read from stdout: </div>
-</div>
-Read from stdout: ^
-^
-Read from stdout: 6 errors found
-6 errors found
-Compilation failed (CompilerInterface)
-Read from stdout: (compile:compileIncremental) Compilation failed
-(compile:compileIncremental) Compilation failed
-Total time: 1 s, completed 5-nov-2015 20.56.50
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@201232, check cycles: false
-
-Initial source changes: 
-	removed:Set(C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala)
-	added: Set(C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\twirl\main\views\html\campodenno.template.scala)
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\twirl\main\views\html\campodenno.template.scala, C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\twirl\main\views\html\campodenno.template.scala, C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala)
-
-Read from stdout: Compiling 1 Scala source to C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes...
-Compiling 1 Scala source to C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes...
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Running cached compiler 1293339, interfacing (CompilerInterface) with Scala compiler version 2.11.6
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	C:\Program Files (x86)\Java\jre1.8.0_51\lib\resources.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\rt.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\jsse.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\jce.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\charsets.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\jfr.jar;C:\Program Files (x86)\Java\jre1.8.0_51\classes;C:\Users\Gabry147\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
-	-classpath
-	C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.0.2.jar;C:\Users\Gabry147\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.1.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.18.2-GA.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe\config\bundles\config-1.2.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.3.jar;C:\Users\Gabry147\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.6.jar;C:\Users\Gabry147\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.3.2.jar;C:\Users\Gabry147\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.3.2.jar;C:\Users\Gabry147\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.3.2.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.1.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\Gabry147\.ivy2\cache\io.netty\netty\bundles\netty-3.9.8.Final.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.2.jar;C:\Users\Gabry147\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.6.jar;C:\Users\Gabry147\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.6.jar;C:\Users\Gabry147\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.6.jar;C:\Users\Gabry147\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.1.jar;C:\Users\Gabry147\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.4.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.4.jar;C:\Users\Gabry147\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.9.jar;C:\Users\Gabry147\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Gabry147\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Gabry147\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\Gabry147\.ivy2\cache\com.h2database\h2\jars\h2-1.3.175.jar;C:\Users\Gabry147\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\anorm_2.11\jars\anorm_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.jsuereth\scala-arm_2.11\jars\scala-arm_2.11-1.4.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-lang.plugins\scala-continuations-library_2.11\bundles\scala-continuations-library_2.11-1.0.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.8.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.google.guava\guava\bundles\guava-16.0.1.jar;C:\Users\Gabry147\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.8.15.jar;C:\Users\Gabry147\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Gabry147\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\Gabry147\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\Gabry147\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\Gabry147\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\casbah-commons_2.11\jars\casbah-commons_2.11-2.8.2.jar;C:\Users\Gabry147\.ivy2\cache\com.github.nscala-time\nscala-time_2.11\jars\nscala-time_2.11-1.0.0.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\mongo-java-driver\jars\mongo-java-driver-2.13.2.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\casbah-core_2.11\jars\casbah-core_2.11-2.8.2.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\casbah-query_2.11\jars\casbah-query_2.11-2.8.2.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\casbah-gridfs_2.11\jars\casbah-gridfs_2.11-2.8.2.jar
-Scala compilation took 2.163985337 s
-Invalidating C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\twirl\main\views\html\campodenno.template.scala...
-Invalidating (transitively) by inheritance from C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\twirl\main\views\html\campodenno.template.scala...
-Initial set of included nodes: Set(C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\twirl\main\views\html\campodenno.template.scala)
-Invalidated by transitive inheritance dependency: Set(C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\twirl\main\views\html\campodenno.template.scala)
-The C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\twirl\main\views\html\campodenno.template.scala source file has the following regular definitions changed:
-	notify, format, wait, $asInstanceOf, productArity, equals, asInstanceOf, f, synchronized, _display_, $isInstanceOf, ref, campodenno, canEqual, productPrefix, notifyAll, readResolve, isInstanceOf, apply, ==, clone, copy, toString, !=, getClass, copy$default$1, render, ne, eq, productIterator, ##, finalize, productElement, hashCode.
-All member reference dependencies will be considered within this context.
-Invalidating C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala...
-Invalidating (transitively) by inheritance from C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala...
-Initial set of included nodes: Set(C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala)
-Invalidated by transitive inheritance dependency: Set(C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala)
-The C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala source file has the following regular definitions changed:
-	.
-All member reference dependencies will be considered within this context.
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 4 s, completed 5-nov-2015 20.57.20
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@94076d, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 1 s, completed 5-nov-2015 20.57.21
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@1569526, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set(C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala)
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala)
-
-Read from stdout: Compiling 1 Scala source to C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes...
-Compiling 1 Scala source to C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes...
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Running cached compiler 178140f, interfacing (CompilerInterface) with Scala compiler version 2.11.6
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	C:\Program Files (x86)\Java\jre1.8.0_51\lib\resources.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\rt.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\jsse.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\jce.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\charsets.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\jfr.jar;C:\Program Files (x86)\Java\jre1.8.0_51\classes;C:\Users\Gabry147\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
-	-classpath
-	C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.0.2.jar;C:\Users\Gabry147\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.1.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.18.2-GA.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe\config\bundles\config-1.2.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.3.jar;C:\Users\Gabry147\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.6.jar;C:\Users\Gabry147\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.3.2.jar;C:\Users\Gabry147\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.3.2.jar;C:\Users\Gabry147\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.3.2.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.1.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\Gabry147\.ivy2\cache\io.netty\netty\bundles\netty-3.9.8.Final.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.2.jar;C:\Users\Gabry147\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.6.jar;C:\Users\Gabry147\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.6.jar;C:\Users\Gabry147\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.6.jar;C:\Users\Gabry147\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.1.jar;C:\Users\Gabry147\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.4.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.4.jar;C:\Users\Gabry147\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.9.jar;C:\Users\Gabry147\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Gabry147\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Gabry147\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\Gabry147\.ivy2\cache\com.h2database\h2\jars\h2-1.3.175.jar;C:\Users\Gabry147\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\anorm_2.11\jars\anorm_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.jsuereth\scala-arm_2.11\jars\scala-arm_2.11-1.4.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-lang.plugins\scala-continuations-library_2.11\bundles\scala-continuations-library_2.11-1.0.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.8.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.google.guava\guava\bundles\guava-16.0.1.jar;C:\Users\Gabry147\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.8.15.jar;C:\Users\Gabry147\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Gabry147\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\Gabry147\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\Gabry147\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\Gabry147\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\casbah-commons_2.11\jars\casbah-commons_2.11-2.8.2.jar;C:\Users\Gabry147\.ivy2\cache\com.github.nscala-time\nscala-time_2.11\jars\nscala-time_2.11-1.0.0.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\mongo-java-driver\jars\mongo-java-driver-2.13.2.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\casbah-core_2.11\jars\casbah-core_2.11-2.8.2.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\casbah-query_2.11\jars\casbah-query_2.11-2.8.2.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\casbah-gridfs_2.11\jars\casbah-gridfs_2.11-2.8.2.jar
-Read from stdout: C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:1: expected class or object definition
-C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:1: expected class or object definition
-Read from stdout: <div class="row">
-<div class="row">
-Read from stdout: ^
-^
-Read from stdout: C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:2: expected class or object definition
-C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:2: expected class or object definition
-Read from stdout: <div class="col-lg-12">
-    <div class="col-lg-12">
-Read from stdout: ^
-    ^
-Read from stdout: C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:3: expected class or object definition
-C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:3: expected class or object definition
-Read from stdout: <div id="chart_div">
-        <div id="chart_div">
-Read from stdout: ^
-        ^
-Read from stdout: C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:4: expected class or object definition
-C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:4: expected class or object definition
-Read from stdout: </div>
-        </div>
-Read from stdout: ^
-        ^
-Read from stdout: C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:5: expected class or object definition
-C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:5: expected class or object definition
-Read from stdout: </div>
-    </div>
-Read from stdout: ^
-    ^
-Read from stdout: C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:6: expected class or object definition
-C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:6: expected class or object definition
-Read from stdout: </div>
-</div>
-Read from stdout: ^
-^
-Read from stdout: 6 errors found
-6 errors found
-Compilation failed (CompilerInterface)
-Read from stdout: (compile:compileIncremental) Compilation failed
-(compile:compileIncremental) Compilation failed
-Total time: 1 s, completed 5-nov-2015 21.33.50
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@77ba4f, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set(C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala)
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala)
-
-Read from stdout: Compiling 1 Scala source to C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes...
-Compiling 1 Scala source to C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes...
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Running cached compiler 1588846, interfacing (CompilerInterface) with Scala compiler version 2.11.6
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	C:\Program Files (x86)\Java\jre1.8.0_51\lib\resources.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\rt.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\jsse.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\jce.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\charsets.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\jfr.jar;C:\Program Files (x86)\Java\jre1.8.0_51\classes;C:\Users\Gabry147\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
-	-classpath
-	C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.0.2.jar;C:\Users\Gabry147\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.1.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.18.2-GA.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe\config\bundles\config-1.2.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.3.jar;C:\Users\Gabry147\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.6.jar;C:\Users\Gabry147\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.3.2.jar;C:\Users\Gabry147\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.3.2.jar;C:\Users\Gabry147\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.3.2.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.1.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\Gabry147\.ivy2\cache\io.netty\netty\bundles\netty-3.9.8.Final.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.2.jar;C:\Users\Gabry147\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.6.jar;C:\Users\Gabry147\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.6.jar;C:\Users\Gabry147\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.6.jar;C:\Users\Gabry147\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.1.jar;C:\Users\Gabry147\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.4.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.4.jar;C:\Users\Gabry147\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.9.jar;C:\Users\Gabry147\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Gabry147\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Gabry147\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\Gabry147\.ivy2\cache\com.h2database\h2\jars\h2-1.3.175.jar;C:\Users\Gabry147\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\anorm_2.11\jars\anorm_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.jsuereth\scala-arm_2.11\jars\scala-arm_2.11-1.4.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-lang.plugins\scala-continuations-library_2.11\bundles\scala-continuations-library_2.11-1.0.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.8.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.google.guava\guava\bundles\guava-16.0.1.jar;C:\Users\Gabry147\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.8.15.jar;C:\Users\Gabry147\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Gabry147\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\Gabry147\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\Gabry147\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\Gabry147\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\casbah-commons_2.11\jars\casbah-commons_2.11-2.8.2.jar;C:\Users\Gabry147\.ivy2\cache\com.github.nscala-time\nscala-time_2.11\jars\nscala-time_2.11-1.0.0.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\mongo-java-driver\jars\mongo-java-driver-2.13.2.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\casbah-core_2.11\jars\casbah-core_2.11-2.8.2.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\casbah-query_2.11\jars\casbah-query_2.11-2.8.2.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\casbah-gridfs_2.11\jars\casbah-gridfs_2.11-2.8.2.jar
-Read from stdout: C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:1: expected class or object definition
-C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:1: expected class or object definition
-Read from stdout: <div class="row">
-<div class="row">
-Read from stdout: ^
-^
-Read from stdout: C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:2: expected class or object definition
-C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:2: expected class or object definition
-Read from stdout: <div class="col-lg-12">
-    <div class="col-lg-12">
-Read from stdout: ^
-    ^
-Read from stdout: C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:3: expected class or object definition
-C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:3: expected class or object definition
-Read from stdout: <div id="chart_div">
-        <div id="chart_div">
-Read from stdout: ^
-        ^
-Read from stdout: C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:4: expected class or object definition
-C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:4: expected class or object definition
-Read from stdout: </div>
-        </div>
-Read from stdout: ^
-        ^
-Read from stdout: C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:5: expected class or object definition
-C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:5: expected class or object definition
-Read from stdout: </div>
-    </div>
-Read from stdout: ^
-    ^
-Read from stdout: C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:6: expected class or object definition
-C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:6: expected class or object definition
-Read from stdout: </div>
-</div>
-Read from stdout: ^
-^
-Read from stdout: 6 errors found
-6 errors found
-Compilation failed (CompilerInterface)
-Read from stdout: (compile:compileIncremental) Compilation failed
-(compile:compileIncremental) Compilation failed
-Total time: 1 s, completed 5-nov-2015 21.34.53
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@1fa480b, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set(C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala)
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala)
-
-Read from stdout: Compiling 1 Scala source to C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes...
-Compiling 1 Scala source to C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes...
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Running cached compiler 198bdcd, interfacing (CompilerInterface) with Scala compiler version 2.11.6
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	C:\Program Files (x86)\Java\jre1.8.0_51\lib\resources.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\rt.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\jsse.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\jce.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\charsets.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\jfr.jar;C:\Program Files (x86)\Java\jre1.8.0_51\classes;C:\Users\Gabry147\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
-	-classpath
-	C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.0.2.jar;C:\Users\Gabry147\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.1.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.18.2-GA.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe\config\bundles\config-1.2.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.3.jar;C:\Users\Gabry147\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.6.jar;C:\Users\Gabry147\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.3.2.jar;C:\Users\Gabry147\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.3.2.jar;C:\Users\Gabry147\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.3.2.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.1.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\Gabry147\.ivy2\cache\io.netty\netty\bundles\netty-3.9.8.Final.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.2.jar;C:\Users\Gabry147\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.6.jar;C:\Users\Gabry147\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.6.jar;C:\Users\Gabry147\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.6.jar;C:\Users\Gabry147\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.1.jar;C:\Users\Gabry147\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.4.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.4.jar;C:\Users\Gabry147\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.9.jar;C:\Users\Gabry147\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Gabry147\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Gabry147\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\Gabry147\.ivy2\cache\com.h2database\h2\jars\h2-1.3.175.jar;C:\Users\Gabry147\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\anorm_2.11\jars\anorm_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.jsuereth\scala-arm_2.11\jars\scala-arm_2.11-1.4.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-lang.plugins\scala-continuations-library_2.11\bundles\scala-continuations-library_2.11-1.0.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.8.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.google.guava\guava\bundles\guava-16.0.1.jar;C:\Users\Gabry147\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.8.15.jar;C:\Users\Gabry147\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Gabry147\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\Gabry147\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\Gabry147\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\Gabry147\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\casbah-commons_2.11\jars\casbah-commons_2.11-2.8.2.jar;C:\Users\Gabry147\.ivy2\cache\com.github.nscala-time\nscala-time_2.11\jars\nscala-time_2.11-1.0.0.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\mongo-java-driver\jars\mongo-java-driver-2.13.2.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\casbah-core_2.11\jars\casbah-core_2.11-2.8.2.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\casbah-query_2.11\jars\casbah-query_2.11-2.8.2.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\casbah-gridfs_2.11\jars\casbah-gridfs_2.11-2.8.2.jar
-Read from stdout: C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:1: expected class or object definition
-C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:1: expected class or object definition
-Read from stdout: <div class="row">
-<div class="row">
-Read from stdout: ^
-^
-Read from stdout: C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:2: expected class or object definition
-C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:2: expected class or object definition
-Read from stdout: <div class="col-lg-12">
-    <div class="col-lg-12">
-Read from stdout: ^
-    ^
-Read from stdout: C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:3: expected class or object definition
-C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:3: expected class or object definition
-Read from stdout: <div id="chart_div">
-        <div id="chart_div">
-Read from stdout: ^
-        ^
-Read from stdout: C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:4: expected class or object definition
-C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:4: expected class or object definition
-Read from stdout: </div>
-        </div>
-Read from stdout: ^
-        ^
-Read from stdout: C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:5: expected class or object definition
-C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:5: expected class or object definition
-Read from stdout: </div>
-    </div>
-Read from stdout: ^
-    ^
-Read from stdout: C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:6: expected class or object definition
-C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:6: expected class or object definition
-Read from stdout: </div>
-</div>
-Read from stdout: ^
-^
-Read from stdout: 6 errors found
-6 errors found
-Compilation failed (CompilerInterface)
-Read from stdout: (compile:compileIncremental) Compilation failed
-(compile:compileIncremental) Compilation failed
-Total time: 2 s, completed 5-nov-2015 21.35.05
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@1fb55b4, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set(C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala)
-	modified: Set(C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\twirl\main\views\html\campodenno.template.scala)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\twirl\main\views\html\campodenno.template.scala, C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\twirl\main\views\html\campodenno.template.scala, C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala)
-
-Read from stdout: Compiling 2 Scala sources to C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes...
-Compiling 2 Scala sources to C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes...
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Running cached compiler c7a628, interfacing (CompilerInterface) with Scala compiler version 2.11.6
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	C:\Program Files (x86)\Java\jre1.8.0_51\lib\resources.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\rt.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\jsse.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\jce.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\charsets.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\jfr.jar;C:\Program Files (x86)\Java\jre1.8.0_51\classes;C:\Users\Gabry147\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
-	-classpath
-	C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.0.2.jar;C:\Users\Gabry147\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.1.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.18.2-GA.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe\config\bundles\config-1.2.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.3.jar;C:\Users\Gabry147\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.6.jar;C:\Users\Gabry147\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.3.2.jar;C:\Users\Gabry147\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.3.2.jar;C:\Users\Gabry147\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.3.2.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.1.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\Gabry147\.ivy2\cache\io.netty\netty\bundles\netty-3.9.8.Final.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.2.jar;C:\Users\Gabry147\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.6.jar;C:\Users\Gabry147\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.6.jar;C:\Users\Gabry147\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.6.jar;C:\Users\Gabry147\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.1.jar;C:\Users\Gabry147\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.4.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.4.jar;C:\Users\Gabry147\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.9.jar;C:\Users\Gabry147\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Gabry147\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Gabry147\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\Gabry147\.ivy2\cache\com.h2database\h2\jars\h2-1.3.175.jar;C:\Users\Gabry147\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\anorm_2.11\jars\anorm_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.jsuereth\scala-arm_2.11\jars\scala-arm_2.11-1.4.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-lang.plugins\scala-continuations-library_2.11\bundles\scala-continuations-library_2.11-1.0.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.8.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.google.guava\guava\bundles\guava-16.0.1.jar;C:\Users\Gabry147\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.8.15.jar;C:\Users\Gabry147\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Gabry147\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\Gabry147\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\Gabry147\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\Gabry147\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\casbah-commons_2.11\jars\casbah-commons_2.11-2.8.2.jar;C:\Users\Gabry147\.ivy2\cache\com.github.nscala-time\nscala-time_2.11\jars\nscala-time_2.11-1.0.0.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\mongo-java-driver\jars\mongo-java-driver-2.13.2.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\casbah-core_2.11\jars\casbah-core_2.11-2.8.2.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\casbah-query_2.11\jars\casbah-query_2.11-2.8.2.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\casbah-gridfs_2.11\jars\casbah-gridfs_2.11-2.8.2.jar
-Read from stdout: C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:1: expected class or object definition
-C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:1: expected class or object definition
-Read from stdout: <div class="row">
-<div class="row">
-Read from stdout: ^
-^
-Read from stdout: C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:2: expected class or object definition
-C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:2: expected class or object definition
-Read from stdout: <div class="col-lg-12">
-    <div class="col-lg-12">
-Read from stdout: ^
-    ^
-Read from stdout: C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:3: expected class or object definition
-C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:3: expected class or object definition
-Read from stdout: <div id="chart_div">
-        <div id="chart_div">
-Read from stdout: ^
-        ^
-Read from stdout: C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:4: expected class or object definition
-C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:4: expected class or object definition
-Read from stdout: </div>
-        </div>
-Read from stdout: ^
-        ^
-Read from stdout: C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:5: expected class or object definition
-C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:5: expected class or object definition
-Read from stdout: </div>
-    </div>
-Read from stdout: ^
-    ^
-Read from stdout: C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:6: expected class or object definition
-C:\Users\Gabry147\OpenDataDashboard\app\views\campodenno.html.scala:6: expected class or object definition
-Read from stdout: </div>
-</div>
-Read from stdout: ^
-^
-Read from stdout: 6 errors found
-6 errors found
-Compilation failed (CompilerInterface)
-Read from stdout: (compile:compileIncremental) Compilation failed
-(compile:compileIncremental) Compilation failed
-Total time: 1 s, completed 5-nov-2015 21.35.37
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@1175619, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@62f5f6, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -711,7 +92,7 @@ Default repositories:
 Getting compiler-interface from component compiler for Scala 2.11.6
 Other repositories:
 Default repositories:
-Running cached compiler e02c0a, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Running cached compiler e9c8ca, interfacing (CompilerInterface) with Scala compiler version 2.11.6
 Calling Scala compiler with arguments  (CompilerInterface):
 	-deprecation
 	-unchecked
@@ -721,19 +102,19 @@ Calling Scala compiler with arguments  (CompilerInterface):
 	C:\Program Files (x86)\Java\jre1.8.0_51\lib\resources.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\rt.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\jsse.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\jce.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\charsets.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\jfr.jar;C:\Program Files (x86)\Java\jre1.8.0_51\classes;C:\Users\Gabry147\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
 	-classpath
 	C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.0.2.jar;C:\Users\Gabry147\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.1.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.18.2-GA.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe\config\bundles\config-1.2.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.3.jar;C:\Users\Gabry147\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.6.jar;C:\Users\Gabry147\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.3.2.jar;C:\Users\Gabry147\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.3.2.jar;C:\Users\Gabry147\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.3.2.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.1.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\Gabry147\.ivy2\cache\io.netty\netty\bundles\netty-3.9.8.Final.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.2.jar;C:\Users\Gabry147\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.6.jar;C:\Users\Gabry147\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.6.jar;C:\Users\Gabry147\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.6.jar;C:\Users\Gabry147\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.1.jar;C:\Users\Gabry147\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.4.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.4.jar;C:\Users\Gabry147\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.9.jar;C:\Users\Gabry147\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Gabry147\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Gabry147\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\Gabry147\.ivy2\cache\com.h2database\h2\jars\h2-1.3.175.jar;C:\Users\Gabry147\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\anorm_2.11\jars\anorm_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.jsuereth\scala-arm_2.11\jars\scala-arm_2.11-1.4.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-lang.plugins\scala-continuations-library_2.11\bundles\scala-continuations-library_2.11-1.0.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.8.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.google.guava\guava\bundles\guava-16.0.1.jar;C:\Users\Gabry147\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.8.15.jar;C:\Users\Gabry147\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Gabry147\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\Gabry147\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\Gabry147\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\Gabry147\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\casbah-commons_2.11\jars\casbah-commons_2.11-2.8.2.jar;C:\Users\Gabry147\.ivy2\cache\com.github.nscala-time\nscala-time_2.11\jars\nscala-time_2.11-1.0.0.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\mongo-java-driver\jars\mongo-java-driver-2.13.2.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\casbah-core_2.11\jars\casbah-core_2.11-2.8.2.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\casbah-query_2.11\jars\casbah-query_2.11-2.8.2.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\casbah-gridfs_2.11\jars\casbah-gridfs_2.11-2.8.2.jar
-Scala compilation took 1.374235085 s
+Scala compilation took 5.269418109 s
 New invalidations:
 	Set()
 Initial set of included nodes: Set()
 Previously invalidated, but (transitively) depend on new invalidations:
 	Set()
 All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 2 s, completed 5-nov-2015 21.36.20
+Total time: 9 s, completed 6-nov-2015 11.20.42
 > server-post-command-cleanup
 > server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@15054b8, check cycles: false
+> {file:/C:/Users/Gabry147/OpenDataDashboard/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@63c86a, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -750,12 +131,18 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 1 s, completed 5-nov-2015 21.36.20
+Total time: 1 s, completed 6-nov-2015 11.20.44
 > server-post-command-cleanup
 > server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@7d72d9, check cycles: false
+> {file:/C:/Users/Gabry147/OpenDataDashboard/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@14edb76, check cycles: false
+Total time: 0 s, completed 6-nov-2015 11.20.44
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Gabry147/OpenDataDashboard/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@2a08a8, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -772,77 +159,30 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 0 s, completed 5-nov-2015 21.36.24
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@cd2d08, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\twirl\main\views\html\base.template.scala)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\twirl\main\views\html\base.template.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\twirl\main\views\html\base.template.scala)
-
-Read from stdout: Compiling 1 Scala source to C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes...
-Compiling 1 Scala source to C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes...
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Running cached compiler 1c68501, interfacing (CompilerInterface) with Scala compiler version 2.11.6
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	C:\Program Files (x86)\Java\jre1.8.0_51\lib\resources.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\rt.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\jsse.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\jce.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\charsets.jar;C:\Program Files (x86)\Java\jre1.8.0_51\lib\jfr.jar;C:\Program Files (x86)\Java\jre1.8.0_51\classes;C:\Users\Gabry147\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
-	-classpath
-	C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.0.2.jar;C:\Users\Gabry147\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.1.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.18.2-GA.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe\config\bundles\config-1.2.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.3.jar;C:\Users\Gabry147\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.6.jar;C:\Users\Gabry147\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.3.2.jar;C:\Users\Gabry147\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.3.2.jar;C:\Users\Gabry147\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.3.2.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.1.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\Gabry147\.ivy2\cache\io.netty\netty\bundles\netty-3.9.8.Final.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.2.jar;C:\Users\Gabry147\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.6.jar;C:\Users\Gabry147\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.6.jar;C:\Users\Gabry147\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.6.jar;C:\Users\Gabry147\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.1.jar;C:\Users\Gabry147\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.4.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.4.jar;C:\Users\Gabry147\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.9.jar;C:\Users\Gabry147\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Gabry147\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Gabry147\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\Gabry147\.ivy2\cache\com.h2database\h2\jars\h2-1.3.175.jar;C:\Users\Gabry147\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\anorm_2.11\jars\anorm_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.jsuereth\scala-arm_2.11\jars\scala-arm_2.11-1.4.jar;C:\Users\Gabry147\.ivy2\cache\org.scala-lang.plugins\scala-continuations-library_2.11\bundles\scala-continuations-library_2.11-1.0.1.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.8.jar;C:\Users\Gabry147\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.3.9.jar;C:\Users\Gabry147\.ivy2\cache\com.google.guava\guava\bundles\guava-16.0.1.jar;C:\Users\Gabry147\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.8.15.jar;C:\Users\Gabry147\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Gabry147\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\Gabry147\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\Gabry147\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\Gabry147\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\casbah-commons_2.11\jars\casbah-commons_2.11-2.8.2.jar;C:\Users\Gabry147\.ivy2\cache\com.github.nscala-time\nscala-time_2.11\jars\nscala-time_2.11-1.0.0.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\mongo-java-driver\jars\mongo-java-driver-2.13.2.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\casbah-core_2.11\jars\casbah-core_2.11-2.8.2.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\casbah-query_2.11\jars\casbah-query_2.11-2.8.2.jar;C:\Users\Gabry147\.ivy2\cache\org.mongodb\casbah-gridfs_2.11\jars\casbah-gridfs_2.11-2.8.2.jar
-Scala compilation took 1.717464224 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 3 s, completed 5-nov-2015 21.43.52
+Total time: 1 s, completed 6-nov-2015 11.20.45
 > server-post-command-cleanup
 > server-handle-next-server-request
 > backgroundRun
 Evaluating tasks: compile:backgroundRun
-Running task... Cancel: sbt.server.ServerTaskCancellation@13a1bf6, check cycles: false
-Total time: 0 s, completed 5-nov-2015 21.43.54
+Running task... Cancel: sbt.server.ServerTaskCancellation@b2050e, check cycles: false
+Total time: 0 s, completed 6-nov-2015 11.21.36
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/Gabry147/OpenDataDashboard/}root/*:playForkConfig
 Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@1deb240, check cycles: false
-Total time: 0 s, completed 5-nov-2015 21.43.59
+Running task... Cancel: sbt.server.ServerTaskCancellation@189cc14, check cycles: false
+Total time: 0 s, completed 6-nov-2015 11.21.40
 > server-post-command-cleanup
 > server-handle-next-server-request
 > root/playForkNotifyStart http://localhost:9000
 Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@5bf0e8, check cycles: false
-Total time: 0 s, completed 5-nov-2015 21.44.01
+Running task... Cancel: sbt.server.ServerTaskCancellation@2e039d, check cycles: false
+Total time: 0 s, completed 6-nov-2015 11.21.41
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/Gabry147/OpenDataDashboard/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@c67098, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@532b7, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -862,31 +202,6 @@ All initially invalidated sources: Set()
 Copy resource mappings: 
 	(C:\Users\Gabry147\OpenDataDashboard\conf\application.conf,C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes\application.conf)
 	(C:\Users\Gabry147\OpenDataDashboard\conf\routes,C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes\routes)
-Total time: 2 s, completed 5-nov-2015 21.44.07
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/Gabry147/OpenDataDashboard/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@183afeb, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(C:\Users\Gabry147\OpenDataDashboard\conf\application.conf,C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes\application.conf)
-	(C:\Users\Gabry147\OpenDataDashboard\conf\routes,C:\Users\Gabry147\OpenDataDashboard\target\scala-2.11\classes\routes)
-Total time: 2 s, completed 5-nov-2015 21.45.41
+Total time: 2 s, completed 6-nov-2015 11.21.52
 > server-post-command-cleanup
 > server-handle-next-server-request

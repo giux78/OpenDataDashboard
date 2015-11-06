@@ -20,7 +20,7 @@ object RealtimeController extends Controller {
             Ok(views.html.base("Dati dai sensori di Campodenno")(label_type))
         }
         else if(label_type.equals("fotovoltaico")) {
-            Ok(views.html.base("e-Motion Bikesharing")(label_type))
+            Ok(views.html.base("PAT: dati sul fotovoltaico")(label_type))
         }
         else {
             Ok(views.html.base("Trentino OpenData DashBoard")("home"));
