@@ -139,7 +139,7 @@ function createHTML(name, div, pixel, title, title_info) {
     var html3 = '`);" class="fa fa-chevron-down"></a><a href="javascript:hide_chart(`';//+name
     var html4 = '`);" class="fa fa-chevron-up"></a><a href="javascript:delete_chart(`';//+name
     var html5 = '`);" class="fa fa-times"></a></span></header><div class="panel-body"><div id="';//+divID
-    var html6 = '" style="width:100%;height:';//+number of pixel
+    var html6 = '" style="width:100%; min-width:350px; height:';//+number of pixel
     var html7 = 'px; text-align: center; margin:0 auto;"></div></div></section></div></div>';
     $('#chart_div').append(html1 + name + html2 + name + html3 + name + html4 + name + html5 + div + html6 + pixel + html7)
 	$('#'+name+'_title').html(title+title_info)

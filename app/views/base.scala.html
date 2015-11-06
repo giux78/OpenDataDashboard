@@ -172,6 +172,9 @@
             @if(page_type.equals("bike")) {
                 @views.html.bike()
             }
+            @if(page_type.equals("campodenno")) {
+                @views.html.campodenno()
+            }
             
 
             <!-- /.row -->
@@ -227,6 +230,10 @@
         <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js'></script>
         <link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.css' rel='stylesheet' />
         <link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css' rel='stylesheet' />
+    }
+    @if(page_type.equals("campodenno")) {
+        <script src="@routes.Assets.at("javascripts/realtime/campodenno.js")" type="text/javascript"></script>
+        
     }
 
 </body>
