@@ -7,6 +7,7 @@ GET   /                    controllers.Application.index
 # GET   /home                controllers.Application.home
 GET   /home2               controllers.Application.home2
 GET   /dashboard_chart/:chart_name               controllers.Application.chart(chart_name)
+GET   /start               controllers.Application.start
 
 # Chart Controller
 GET   /chart_titles        controllers.ChartController.chart_titles

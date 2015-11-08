@@ -1,26 +1,47 @@
+/**
+ * GLOBAL VARIABLES
+*/
+//json loaded from campodenno source
 var data;
+//morris chart of temperature and related data
 var tempChart;
 var tempData = [];
+//morris chart of humidity and related data
 var umChart;
 var umData = [];
+//morris chart of wind direction and related data
 var dirVChart;
 var dirVData = [];
+//morris chart of wind speed and related data
 var velVChart;
 var velVData = [];
+//morris chart of energy power and related data
 var potChart;
 var potData = [];
+//morris chart of air quality and related data
 var airChart;
 var airData = [];
+//list of morris chart
 var chart = {};
+//max number of point displayed
+var max = 20;
 
+/**
+ * FUNCTION
+ */
+//on page load, load data, make plot and set a timer
 $(document).ready(function () {
     loadData();
-    console.log(data);
     makeAllPlot();
+    //reload timer: 2 minutes
     var intervalId = setInterval(function() {updateAll();}, 120000);
 });
 
+/* 
+Get data from source and save it on variable data
+*/
 function loadData() {
+    //get request that return a json string
     var json = httpGet("http://allow-any-origin.appspot.com/http://campodenno.taslab.eu/stazioni/json?id=CMD001");
     //console.log(json);
     data = JSON.parse(json);
@@ -28,26 +49,40 @@ function loadData() {
     data=data.Response.result.measures.sensor;
 }
 
+/*
+Create a get request to the parameter theUrl
+*/
 function httpGet(theUrl) {
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.open( "GET", theUrl, false );
+	//empty request message
     xmlHttp.send( null );
     return xmlHttp.responseText;
 }
 
+/*
+From the time saved in the json,
+return a morris readable time,
+splitting the string in his token
+*/
 function timestampFormatter(string) {
-    //31/12/2015 14.29
-    //2015-12-31 14:29
+    //input 31/12/2015 14.29
+    //output 2015-12-31 14:29
     string = string.split(" ");
     var date = string[0].split("/");
     var time = string[1].split(".");
     return date[2]+"-"+date[1]+"-"+date[0]+" "+time[0]+":"+time[1];
 }
 
+/*
+From the data of a sensor, format data to get a object that morris.js can read as point
+*/
 function makePoint(dataList) {
     var point = {};
     point['timestamp'] = ["timestamp"];
+	//formatted time parameter to use as x-axis
     point['timestamp'] = timestampFormatter(dataList[0].timestamp);
+	//for every data in the list, save name and value in the point
     for(var i=0; i<dataList.length; i++) {
         var sensor = dataList[i];
         point[sensor.name] = [sensor.name];
@@ -56,8 +91,17 @@ function makePoint(dataList) {
     return point;
 }
 
+/*
+Parameters:
+	divId: id of the chart div;
+	dataIn: data of a sensor (a portion of the json)
+	dataset: data collected for this sensor
+Behavior:
+	Create a morris chart from given data
+*/
 function makePlot(divId, dataIn, dataset) {
     var labels = [];
+	//get all parameters names of the sensor to use it as label
     for(var i=0; i<dataIn.length; i++) {
         labels.push(dataIn[i].name);
     }
@@ -68,11 +112,18 @@ function makePlot(divId, dataIn, dataset) {
         xkey: 'timestamp',
         ykeys: labels,
         labels: labels,
-        postUnits: dataIn[0].um,
-        resize: true
+        postUnits: dataIn[0].um
     });
 }
 
+/*
+Parameters:
+	name: chart key
+	pixel: n° of pixel for the height of chart (string)
+	title: chart title
+Behavior:
+	Create chart with title and legend
+*/
 function createHTML(name, pixel, title) {
     //html to create chart with title and legend
     // tip: ` = Alt + 0180 on windows
@@ -87,12 +138,22 @@ function createHTML(name, pixel, title) {
 	console.log("html created");
 }
 
+/*
+Behavior: create all html structures and charts
+*/
 function makeAllPlot() {
+	//add new point to data list
     tempData.push(makePoint([data[0].measure[0]]));
+	//create html for chart
     createHTML("temperatura", "300", "Temperatura rilevata")
+	//create chart
     tempChart = makePlot("temperatura", [data[0].measure[0]],tempData);
+	//create filed in the list of chart
     chart["temperatura"] = ["temperatura"];
+	//save chart in chart list
     chart["temperatura"] = tempChart;
+	
+	//[same functions for all other sensor]
     
     umData.push(makePoint([data[0].measure[1]]));
     createHTML("umidita", "300", "Umidità rilevata")
@@ -125,16 +186,24 @@ function makeAllPlot() {
     chart["aria"] = airChart;
 }
 
+/*
+Behavior: update all charts
+*/
 function updateAll() {
     console.log("update");
+	//load data with GET request
     loadData();
     
-    var max = 20;
-    
+	//create point using new data
     var point = makePoint([data[0].measure[0]]);
+	//add point to data
     tempData.push(point);
+	//if there are too many points, delete the oldest one
     if(tempData.length>max) tempData.shift();
+	//set the updated dataset for the chart
     tempChart.setData(tempData);
+	
+	//[same functions for all other sensor]
     
     point = makePoint([data[0].measure[1]]);
     umData.push(point);
@@ -162,6 +231,11 @@ function updateAll() {
     airChart.setData(airData);
 }
 
+/* Parameter: 
+    element: the html element that call this function (the "v")
+Behavior:
+    hide the plot from html, maintaining the title and buttons
+*/
 function hide_chart(element) {
     // Hierarchy: div with all chart info -> div with header and panel body with chart and legend->section->header->SPAN
     //from element that call the function to the div that contain all chart info
@@ -173,7 +247,7 @@ function hide_chart(element) {
 /* Parameter: 
     element: the html element that call this function (the "^")
 Behavior:
-    show the plot from html, maintaining the title and buttons
+    show the plot
 */
 function show_chart(element) {
     //from element to div that contain all, then show the div with chart and legend

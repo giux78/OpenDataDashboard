@@ -1,6 +1,6 @@
 //Javascript function that manage charts and dashboards
 
-/*
+/**
 GLOBAL VARIABLES ###########################################
 */
 
@@ -24,7 +24,7 @@ var chart = {};
 var isCreate = true;
 // END global variables ####################################
 
-/*
+/**
 FUNCTIONS ##################################################
 */
 

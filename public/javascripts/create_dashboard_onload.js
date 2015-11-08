@@ -1,4 +1,5 @@
-//when page is loaded, load all dataset title
+//custom load function for create_dashboard
+//instead of load chart page, call add_chart() to add chart in page itself
 $(document).ready(function() {
 	$.ajax({
 		url: '/chart_titles',

@@ -23,8 +23,8 @@ object RealtimeController extends Controller {
             Ok(views.html.base("PAT: dati sul fotovoltaico")(label_type))
         }
         else {
-            Ok(views.html.base("Trentino OpenData DashBoard")("home"));
-        }
+            Ok(views.html.base("Trentino OpenData DashBoard")("start"));
+        } 
     }
   
 }
