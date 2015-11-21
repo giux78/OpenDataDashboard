@@ -29,6 +29,11 @@ object Application extends Controller {
     Ok(views.html.base("Usa la tua Dashboard")("view_dashboard"))
   }
   
+  def show_dashboard(dashboard_id :String) = Action {
+      //for now, dash_id is useless
+    Ok(views.html.base("Usa la tua Dashboard")("show_dashboard"))
+  }
+  
   def start = Action {
     Ok(views.html.base("Benvenuti")("start"))
   }

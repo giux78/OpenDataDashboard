@@ -24,7 +24,7 @@ var airData = [];
 //list of morris chart
 var chart = {};
 //max number of point displayed
-var max = 20;
+var max = 30;
 
 /**
  * FUNCTION

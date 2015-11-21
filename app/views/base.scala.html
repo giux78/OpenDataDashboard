@@ -169,6 +169,9 @@
             @if(page_type.equals("view_dashboard")) {
                 @views.html.view_dashboard()
             }
+            @if(page_type.equals("show_dashboard")) {
+                @views.html.show_dashboard()
+            }
             @if(page_type.equals("bike")) {
                 @views.html.bike()
             }
@@ -226,7 +229,11 @@
     }
     @if(page_type.equals("view_dashboard")) {
         <script src="@routes.Assets.at("javascripts/chart_renderer.js")" type="text/javascript"></script>
-        
+    }
+    @if(page_type.equals("show_dashboard")) {
+        <script src="@routes.Assets.at("javascripts/chart_renderer.js")" type="text/javascript"></script>
+        <!-- on load, draw dashboard -->
+        <script src="@routes.Assets.at("javascripts/show_dashboard_onload.js")" type="text/javascript"></script>
     }
     @if(page_type.equals("bike")) {
         <script src="@routes.Assets.at("javascripts/realtime/e_motion_bike.js")" type="text/javascript"></script>

@@ -16,7 +16,10 @@ GET   /chart/:chart_name   controllers.ChartController.chartsFromName(chart_name
 # Dashboard manager
 GET   /create_dashboard             controllers.Application.create_dashboard
 POST    /post_dashboard             controllers.ChartController.saveDashboard
+# old but working:
 GET     /view_dashboard             controllers.Application.view_dashboard
+# new
+GET     /show_dashboard/:dashboard_id      controllers.Application.show_dashboard(dashboard_id)         
 GET     /dashboard/:dashboard_id    controllers.ChartController.boardFromId(dashboard_id) 
 
 # Map static resources from the /public folder to the /assets URL path

@@ -454,7 +454,11 @@ function save_dashboard(){
                 $("#salva").hide(); //it will re-appear after next "add_chart()"
 				//append dashboard code after salva button
                 document.getElementById("salva").insertAdjacentHTML('afterend', '<span class="label label-default" style="display: inline-block; margin:1px">'+result.code+'</span>');
-                alert("Dashboard salvato con codice:\n\n"+result.code+ "\n\nSalvalo e riusalo quando vuoi!");
+                //alert("Dashboard salvato con codice:\n\n"+result.code+ "\n\nSalvalo e riusalo quando vuoi!");
+                document.getElementById("href_dashboard").href="/show_dashboard/"+result.code;
+                $('#link_dashboard').text(window.location.protocol+window.location.host+"/show_dashboard/"+result.code)
+                $('#code_dashboard').text(result.code)
+                $('#dashboardModal').modal('show');
             },
             error: function(xhr, status, error) {
               var err = eval("(" + xhr.responseText + ")");
@@ -469,12 +473,16 @@ Behavior:
 	once send code button is clicked, send a get request to get data and draw the dashboard
 */
 function visualize_dashboard(){
+    //get the code from textbox
+    var code = $("#text_form").val()
+    show_dashboard(code)
+}
+function show_dashboard(id) {
     //Very important! isCreate = true is for create_dashboard only 
     /*GET request give all kind of dashboard for a given name, even not necessary one. A uncessary dashboard with isCreate=true WILL BE draw (empty)*/
     isCreate = false;
-	//get the code from textbox
-    var id = $("#text_form").val()
-	//check is textbox is empty or null
+	
+	//check if id is empty or null
 	if(id!=="" && id!==undefined) {
 		$.ajax({
 			url: '/dashboard/' + id,
